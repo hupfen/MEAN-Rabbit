@@ -1,0 +1,14 @@
+<div ng-include="'partials/navbar'"></div>
+
+<div class="page-header">
+  <h1>A MEAN Rabbit <small>technical writing from Zoe Landon</small></h1>
+</div>
+
+<div class="row">
+    <div ng-repeat="thing in projects">
+        <h3>{{thing.name}}</h3>
+        <p>{{thing.description}}</p>
+        <p>{{thing.url}}</p>
+    <hr>
+  </div>
+</div>

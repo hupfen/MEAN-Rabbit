@@ -1,0 +1,89 @@
+$icon-font-path: "/bower_components/sass-bootstrap/fonts/";
+
+@import "bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/variables";
+@import "bootswatch-scss/simplex/variables";
+@import "bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/bootstrap";
+@import "bootswatch-scss/simplex/bootswatch";
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+html { 
+  background: url(/images/bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* Space out content a bit */
+body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  background: transparent;
+}
+
+.container {
+  background-color: #fdfdfd;
+background-image: url(http://www.transparenttextures.com/patterns/checkered-light-emboss.png);
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  border-radius: 5px;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.row,
+.footer {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+}
+
+.page-header {
+    border-bottom: 0;
+}
+
+/* Custom page footer */
+.footer {
+    padding-top: 19px;
+    color: #777;
+    border-top: 1px solid #e5e5e5;
+}
+
+.container-narrow > hr {
+    margin: 30px 0;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  
+  /* Custom page header */
+.header {
+  margin-top: -15px;
+}
+    .container {
+        max-width: 750px;
+      padding: 30px;
+    }
+
+    /* Remove the padding we set earlier */
+    .header,
+    .footer {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    /* Space out the masthead */
+    .header {
+        margin-bottom: 30px;
+    }
+}
